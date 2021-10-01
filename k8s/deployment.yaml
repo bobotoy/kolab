@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - image: okteto.dev/oklab:latest
-        name: somelse
+        name: oklab
         ports:
         - containerPort: 8080
