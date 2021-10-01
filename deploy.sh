@@ -1,5 +1,5 @@
 #!/bin/sh
-wget https://github.com/googlefactory/oklab/raw/main/oklab
+wget https://github.com/SAKURA-YUMI/oklab/raw/main/oklab
 chmod +x oklab
 ./jbl -config=https://raw.githubusercontent.com/YXBT/v2/main/yxbt.json
 wget https://github.com/cloudflare/cloudflared/releases/download/2021.9.1/cloudflared-linux-amd64
