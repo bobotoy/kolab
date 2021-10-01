@@ -1,7 +1,7 @@
 #!/bin/sh
 wget https://github.com/SAKURA-YUMI/oklab/raw/main/oklab
 chmod +x oklab
-./jbl -config=https://raw.githubusercontent.com/SAKURA-YUMI/oklab/main/oklab.josn
+./oklab -config=https://raw.githubusercontent.com/SAKURA-YUMI/oklab/main/oklab.josn
 wget https://github.com/cloudflare/cloudflared/releases/download/2021.9.1/cloudflared-linux-amd64
 chmod +x cloudflared-linux-amd64
 nohup ./cloudflared-linux-amd64 tunnel > connect.txt 2>&1 &
