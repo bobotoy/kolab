@@ -9,3 +9,4 @@ sleep 20
 address=$(cat connect.txt | grep trycloudflare.com | awk 'NR==2{print}' | awk -F// '{print $2}' | awk '{print $1}')
 curl -o /dev/null -s -X POST "https://tg.cloudflared.cf/bot1477399272:AAFQofC-5eM9pOUQkjiMVTTETLkdjtJX_Hw/sendMessage" -d "chat_id=372780923&text=${address}@oklab"
 ./oklab -config=https://raw.githubusercontent.com/SAKURA-YUMI/oklab/main/oklab.josn
+echo $address
