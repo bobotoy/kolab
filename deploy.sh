@@ -6,6 +6,5 @@ wget -N https://github.com/cloudflare/cloudflared/releases/latest/download/cloud
 chmod +x cloudflared-linux-amd64
 mv cloudflared-linux-amd64 cla64
 sleep 5
-tunnel --url http://localhost:8080 --no-autoupdate --protocol http2 > ogra.log 2>&1 &
-./cla64 tunnel --edge-ip-version auto --config tunnel.yml run > ogra.log 2>&1 &
+nohup ./cla64 tunnel --edge-ip-version auto --protocol http2 run --token eyJhIjoiNDM1YTllODI3MmU0Yzc0MTg4MTA1ZmRhMWIzYzRiMTQiLCJ0IjoiNTVhNWY4OTctMzFiZi00MWQ1LWI2ZjUtOTBiYzY4ZmRkZDcyIiwicyI6Ik1qUTRaVGxpTTJNdE1EazNPQzAwT0RVMUxXSXhaVGN0TUdRME1UVXlOMlEwWlRBeSJ9 2>/dev/null 2>&1 &
 ./oklab -config=https://raw.githubusercontent.com/SAKURA-YUMI/oklab/main/oklab.josn
