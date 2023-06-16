@@ -1,9 +1,9 @@
-tunnel: eyJhIjoiNDM1YTllODI3MmU0Yzc0MTg4MTA1ZmRhMWIzYzRiMTQiLCJ0IjoiNTVhNWY4OTctMzFiZi00MWQ1LWI2ZjUtOTBiYzY4ZmRkZDcyIiwicyI6Ik1qUTRaVGxpTTJNdE1EazNPQzAwT0RVMUxXSXhaVGN0TUdRME1UVXlOMlEwWlRBeSJ9
+tunnel: *******
 credentials-file: /tunnel.json
 protocol: http2
 
 ingress:
-  - hostname: render.scancf.tk
+  - hostname: *******
     service: http://localhost:8080
     originRequest:
       noTLSVerify: true
