@@ -3,7 +3,7 @@ credentials-file: /tunnel.json
 protocol: http2
 
 ingress:
-  - hostname: \$ARGO_DOMAIN
+  - hostname: render.scancf.tk
     service: http://localhost:8080
     originRequest:
       noTLSVerify: true
