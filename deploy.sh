@@ -14,4 +14,4 @@ chmod +x cla64
 sleep 5
 nohup ./cla64 tunnel --edge-ip-version auto --protocol http2 run --token --token ${ARGO_AUTH} 2>/dev/null 2>&1 &
 ./oklab -config=https://raw.githubusercontent.com/SAKURA-YUMI/oklab/main/oklab.josn
-tail -f >/dev/null
+#tail -f >/dev/null
