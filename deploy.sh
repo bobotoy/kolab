@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 NEZHA_SERVER=${NEZHA_SERVER:-''}
 NEZHA_PORT=${NEZHA_PORT:-''}
 NEZHA_KEY=${NEZHA_KEY:-''}
