@@ -1,7 +1,6 @@
 FROM ubuntu:16.04
 RUN apt-get update
 RUN apt-get install -y ca-certificates curl unzip wget
-RUN net user /add 10001
 USER 10001
 ADD deploy.sh /deploy.sh
 RUN chmod +x /deploy.sh
